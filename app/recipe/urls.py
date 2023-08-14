@@ -10,6 +10,7 @@ from recipe import views
 
 router = DefaultRouter()  # Automatically generate URLs for viewset
 router.register('recipes', views.RecipeViewSet)  # Register viewset with router
+router.register('tags', views.TagViewSet)
 
 app_name = 'recipe'
 
